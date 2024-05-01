@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- importado de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <!-- iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Ton Pab">
+    <meta name="description" content="Portafolio de Desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PabloDev | Website</title>
+    <!-- favicon -->
+    <!-- 48x48 pixeles -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body>
+    <!-- Barra de Navegacion (NAVBAR) (responsive behaviors)-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" width="50" alt="Logo Pagina">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion principal - seccion hero - sera lo primera que veran de la pag web -->
+
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador rounded-circle" src="images/desarrollador-ejemplo.jpg"
+                alt="foto-personal">
+            <h1>Hola, Soy Pablo Mejillones</h1>
+            <h2>Soy programador web en frontend y backend</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-imagen img-fluid" src="images/hero-inferior3.jpg" alt="Monitor,  laptop y logos">
+        </div>
+    </section>
+
+    <!-- Section sobre mi - about ME -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce a Pablo Dev</h2>
+            <p class="seccion-texto">Ingeniero electrónico y programador web con capacidad crítica y experiencia en soluciones tecnológicas, teniendo un background en infraestructura de redes, actualmente tengo un enfoque en el desarrollo full-stack de aplicaciones web. Mi nivel de inglés es B2 y cuento con aproximadamente 1 año y medio de experiencia en desarrollo web, usando principalmente Java y React. Mi meta es poder dedicarme por completo al desarrollo web.</p>
+        </div>
+    </section>
+    <!-- Proyectos Realizados -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis Proyectos Recientes</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado</h3>
+        <!-- galeria de proyectos -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3>Proyecto 1 (React)</h3>
+                    <div class="proyecto">
+                        <img src="images/tictactoe.png" alt="proyecto1-image">
+                        <div class="overlay">
+                            <p>Proyecto 1 <br>Tic Tac Toe Game</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/pablex72/classic-game" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://classic-game-eight.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3>Proyecto 2 (React)</h3>
+                    <div class="proyecto">
+                        <img src="images/gestorterjetas.png" alt="proyecto1-image">
+                        <div class="overlay">
+                            <p>Proyecto 2 Bank Card Manager</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/pablex72/BankCardManager" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://bank-card-manager-tbl5.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <h3>Proyecto 3 (React-Java)</h3>
+                        <img src="images/notes.png" alt="proyecto1-image">
+                        <div class="overlay">
+                            <p>Proyecto 3 Notes Reminder Full Stack</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/pablex72/notes-reminder-app-client" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://notes-reminder-app-client-cque.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section Experiencia section clara -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- desarrollo web -->
+                <div class="columna col col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Desarrollo Frontend</p>
+                    <p>Mi experiencia abarca el desarrollo frontend con HTML, CSS y JavaScript, junto con frameworks
+                        como React. Me especializo en crear interfaces interactivas y dinámicas para aplicaciones web.
+                    </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JavaScript</span>
+                        <span class="badge text-bg-primary">React</span>
+                    </div>
+                </div>
+                <!-- articulos -->
+                <div class="columna col col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Desarrollo Backend</p>
+                    <p>Como desarrollador backend, domino Java y el framework Spring, especializándome en la creación de
+                        sistemas robustos y escalables. Además, tengo experiencia en implementación continua y entrega
+                        continua (CI/CD).</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Java</span>
+                        <span class="badge text-bg-primary">Spring</span>
+                        <!-- <span class="badge text-bg-primary">Docker</span> -->
+                        <span class="badge text-bg-primary">CI/CD</span>
+                        <span class="badge text-bg-primary">MySQL</span>
+
+                    </div>
+                </div>
+                <!-- estudiante -->
+                <div class="columna col col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Data Science</p>
+                    <p>Mi enfoque en Data Science abarca el uso de Python junto con librerías como Scikit-learn y
+                        TensorFlow. Realicé análisis de datos, aprendizaje automático y desarrollo de modelos
+                        predictivos.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Python</span>
+                        <span class="badge text-bg-primary">Scikit-learn</span>
+                        <span class="badge text-bg-primary">TensorFlow</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="https://github.com/pablex72/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+                Ver Mas Proyectos en mi Repositorio
+                <!-- <i class="bi bi-arrow-right-circle-fill"></i> -->
+            </button>
+        </a>
+    </section>
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Backend Proyectos</h2>
+        <div class="card">
+            <div class="card-header">
+                Más Recientes - Repositorios
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://github.com/pablex72/mercado-pago-payment-integration-gradle" target="_blank"
+                    rel="noopener noreferrer">
+                    <li class="list-group-item">API Integration mercado pago</li>
+                </a>
+                <a href="https://github.com/pablex72/notes-reminder-backend" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Full-Stack application Notes Reminder</li>
+                </a>
+                <a href="https://notes-reminder-backend.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Full-Stack application Notes Reminder - DEPLOY</li>
+                </a>
+            </ul>
+        </div>
+        <br>
+    </section>
+
+    <!-- Testimonio -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2>Stack Principal</h2>
+        <h3 class="seccion-descripcion">Estos son algunas de las tecnologias que manejo...</h3>
+        <!-- carrusel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="testimonio-imagen" src="images/java.png" alt="java">
+                        <p class="testimonio-texto">Java usando Spring Framework
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Tecnologías de Desarrollo</p>
+                            <p class="cargo">Spring - JUnit -
+                                IntelliJ IDEA - Apache Kafka - Docker
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen" src="images\Javascript_badge.svg.png" alt="react-logo">
+                        <p class="testimonio-texto">JavaScript usando React y Angular básico.
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Tecnologías de Desarrollo</p>
+                            <p class="cargo">ReactJs - Redux Toolkit - Bootstrap -
+                                Tailwind CSS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Hablemos!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Contactame para desarrollar tu siguiente proyecto web.
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:tonyp2hoy@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pie de pagina footer -->
+    <footer class="contacto seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="images/icono-blanco.svg" alt="footer-icono">
+        <p class="footer-texto text-center">Aprendo y creo aplicaciones web constantemente.<br>Creemos un proyecto juntos</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://github.com/pablex72" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-mejillone-98b07425a/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:tonyp2hoy@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Pablo Mejillone (2024) &#169;</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
